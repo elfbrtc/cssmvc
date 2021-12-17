@@ -1,0 +1,84 @@
+﻿<html>
+<head>
+    <style>
+        *{
+            box-sizing:border-box;
+         }
+        body{
+            margin:0;
+        }
+        .header{
+            text-align:center;
+            padding:40px;
+            
+        }
+        .row{
+            display:flex;
+            flex-wrap:wrap;
+            padding:0 5px;
+        }
+        .column{
+            flex:25%;
+            max-width:25%;
+            padding:0 5px;
+        }
+        .colomn img{
+            margin-top:6px;
+            vertical-align:middle;
+            width:100%;
+        }
+        @@media screen and (max-width:800px){
+            .column{
+                flex:50%;
+                max-width:100%;
+            }
+        }
+        @@media screen and (max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Flexbox ile Image Gallery</h1>
+        <p>Flexboxın gücü :d</p>
+    </div>
+    <div class="row">
+        <div class="colomn">
+            <img src="~/images/resimler/135-400x600.jpg" />
+            <img src="~/images/resimler/154-400x600.jpg" />
+            <img src="~/images/resimler/168-400x600.jpg" />
+            <img src="~/images/resimler/171-400x600.jpg" />
+            <img src="~/images/resimler/806-400x600.jpg" />
+            <img src="~/images/resimler/937-400x600.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="~/images/resimler/181-400x600.jpg" />
+            <img src="~/images/resimler/223-400x600.jpg" />
+            <img src="~/images/resimler/282-400x600.jpg" />
+            <img src="~/images/resimler/330-400x600.jpg" />
+            <img src="~/images/resimler/823-400x600.jpg" />
+            <img src="~/images/resimler/961-400x600.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="~/images/resimler/378-400x600.jpg" />
+            <img src="~/images/resimler/453-400x600.jpg" />
+            <img src="~/images/resimler/47-400x600.jpg" />
+            <img src="~/images/resimler/479-400x600.jpg" />
+            <img src="~/images/resimler/890-400x600.jpg" />
+            <img src="~/images/resimler/bilgisayar.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="~/images/resimler/534-400x600.jpg" />
+            <img src="~/images/resimler/575-400x600.jpg" />
+            <img src="~/images/resimler/724-400x600.jpg" />
+            <img src="~/images/resimler/78-400x600.jpg" />
+            <img src="~/images/resimler/914-400x600.jpg" />
+            <img src="~/images/resimler/yol.jpg" />
+        </div>
+    </div>
+</body>
+</html>
